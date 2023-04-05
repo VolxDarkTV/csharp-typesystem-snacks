@@ -158,8 +158,39 @@ namespace csharp_typesystem_snacks
             //Console.WriteLine($"La somma è: {oddSum}");
 
 
+            //Snack 9 Crea un array vuoto e chiedi all’utente un numero da inserire nell’array. Continua a chiedere i numeri all’utente e a inserirli nell’array, fino a quando la somma degli elementi è minore di 50.
 
+            int[] numbers = new int[0];
 
+            int sum = 0;
+
+            while (sum < 50)
+            {
+                Console.WriteLine($"Inserisci numeri somma max 50: ");
+                int inputNumber = Convert.ToInt32(Console.ReadLine());
+
+                // creazione di un nuovo array con un elemento in più rispetto a quello originale
+                int[] nuovoArray = new int[numbers.Length + 1];
+
+                for(int i = 0; i < numbers.Length; i++)
+                {
+                    nuovoArray[i] = numbers[i];
+                }
+
+                nuovoArray[numbers.Length] = inputNumber;
+
+                numbers = nuovoArray;
+
+                sum += inputNumber;
+            }
+
+            Console.WriteLine("Array completo: ");
+            foreach (var item in numbers)
+            {
+                Console.WriteLine(item + " ");
+            }
+            
+            Console.WriteLine("La somma degli elementi è: " + sum);
 
 
         }
