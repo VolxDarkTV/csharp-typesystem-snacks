@@ -27,13 +27,14 @@ namespace csharp_typesystem_snacks
 
 
 
-            //if( firstWord.Length == secondWord.Length )
+            //if (firstWord.Length == secondWord.Length)
             //{
             //    Console.WriteLine($"Hanno lunghezzauguale {firstWord} {secondWord}");
             //}
-            //else if(firstWord.Length > secondWord.Length) {
+            //else if (firstWord.Length > secondWord.Length)
+            //{
 
-            //    Console.WriteLine($"Tra {firstWord} & {secondWord} è maggiore {firstWord}");
+            //    Console.WriteLine($"Tra {secondWord} & {firstWord} è maggiore {firstWord}");
             //}
             //else
             //{
@@ -107,6 +108,10 @@ namespace csharp_typesystem_snacks
             //else 
             //    Console.WriteLine("Non sei invitato");
 
+
+
+
+           
         }
 
         //Snack 1
