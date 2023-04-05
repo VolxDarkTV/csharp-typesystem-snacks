@@ -160,37 +160,65 @@ namespace csharp_typesystem_snacks
 
             //Snack 9 Crea un array vuoto e chiedi all’utente un numero da inserire nell’array. Continua a chiedere i numeri all’utente e a inserirli nell’array, fino a quando la somma degli elementi è minore di 50.
 
-            int[] numbers = new int[0];
+            //int[] numbers = new int[0];
 
-            int sum = 0;
+            //int sum = 0;
 
-            while (sum < 50)
+            //while (sum < 50)
+            //{
+            //    Console.WriteLine($"Inserisci numeri somma max 50: ");
+            //    int inputNumber = Convert.ToInt32(Console.ReadLine());
+
+            //    // creazione di un nuovo array con un elemento in più rispetto a quello originale
+            //    int[] nuovoArray = new int[numbers.Length + 1];
+
+            //    for(int i = 0; i < numbers.Length; i++)
+            //    {
+            //        nuovoArray[i] = numbers[i];
+            //    }
+
+            //    nuovoArray[numbers.Length] = inputNumber;
+
+            //    numbers = nuovoArray;
+
+            //    sum += inputNumber;
+            //}
+
+            //Console.WriteLine("Array completo: ");
+            //foreach (var item in numbers)
+            //{
+            //    Console.WriteLine(item + " ");
+            //}
+
+            //Console.WriteLine("La somma degli elementi è: " + sum);
+
+
+
+
+            //Snack 10 Fai inserire un numero, che chiameremo N, all’utente.
+            //Genera N array, ognuno formato da 10 numeri casuali tra 1 e 100.
+            //Ogni volta che ne crei uno, stampalo a schermo.
+
+            Console.Write("Inserisci un numero: ");
+            int n = int.Parse(Console.ReadLine());
+
+            Random rnd = new Random();
+
+            for (int i = 0; i < n; i++)
             {
-                Console.WriteLine($"Inserisci numeri somma max 50: ");
-                int inputNumber = Convert.ToInt32(Console.ReadLine());
-
-                // creazione di un nuovo array con un elemento in più rispetto a quello originale
-                int[] nuovoArray = new int[numbers.Length + 1];
-
-                for(int i = 0; i < numbers.Length; i++)
+                int[] array = new int[10];
+                for (int j = 0; j < 10; j++)
                 {
-                    nuovoArray[i] = numbers[i];
+                    array[j] = rnd.Next(1, 101);
                 }
-
-                nuovoArray[numbers.Length] = inputNumber;
-
-                numbers = nuovoArray;
-
-                sum += inputNumber;
+                Console.WriteLine("Array " + (i + 1) + ": " + string.Join(", ", array));
             }
 
-            Console.WriteLine("Array completo: ");
-            foreach (var item in numbers)
-            {
-                Console.WriteLine(item + " ");
-            }
-            
-            Console.WriteLine("La somma degli elementi è: " + sum);
+
+
+
+
+
 
 
         }
