@@ -87,6 +87,7 @@ namespace csharp_typesystem_snacks
 
 
             //Snack 6
+
             //String[] partyList = { "Vincenzo", "Gloria", "Giovanni", "Giacomo", "Davide", "Elena" };
 
             //Console.WriteLine("Name: ");
@@ -109,9 +110,58 @@ namespace csharp_typesystem_snacks
             //    Console.WriteLine("Non sei invitato");
 
 
+            //Snack 7 Crea un array vuoto. Chiedi per 6 volte all’utente di inserire un numero, se è dispari inseriscilo nell’array.
+
+            //int[] oddNumbers = new int[0];
 
 
-           
+            //for (int i = 0; i < 6; i++)
+            //{
+            //    Console.WriteLine("Inserisci 6 numeri: ");
+            //    int userNumber = Convert.ToInt32(Console.ReadLine());
+
+            //    if (userNumber % 2 != 0)
+            //    {
+
+            //        int[] nuovoArray = new int[oddNumbers.Length + 1];
+
+            //        for (int j = 0; j < oddNumbers.Length; j++)
+            //        {
+            //            nuovoArray[j] = oddNumbers[j];
+            //        }
+
+            //        nuovoArray[oddNumbers.Length] = userNumber;
+            //        oddNumbers = nuovoArray;
+            //    }
+            //}
+            //// stampa dell'array contenente solo i numeri dispari
+            //Console.WriteLine("Numeri dispari inseriti:");
+            //foreach (int n in oddNumbers)
+            //{
+            //    Console.Write(n + " ");
+            //}
+
+            //Snack 8 Crea un array di numeri interi e fai la somma di tutti gli elementi che sono in posizione dispari.
+
+            //int[] evenNumbers = { 1, 2, 3, 4, 5, 6, 7 };
+
+            //int oddSum = 0;
+
+            //for (int i = 0; i < evenNumbers.Length; i++)
+            //{
+            //    if(i % 2 != 0)
+            //    {
+            //        oddSum += evenNumbers[i];
+            //    }
+            //}
+
+            //Console.WriteLine($"La somma è: {oddSum}");
+
+
+
+
+
+
         }
 
         //Snack 1
@@ -122,7 +172,7 @@ namespace csharp_typesystem_snacks
 
 
 
-        
+
 
     }
 }
